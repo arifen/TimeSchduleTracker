@@ -1,0 +1,26 @@
+<h1>Users Operation Time</h1>
+</br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>UserId</th>
+        <th>Event Name</th>
+        <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat='timeevent in timeevents'>
+        <td>{{timeevent.userid}}</td>
+        <td>{{timeevent.event}}</td>
+        <td >{{timeevent.date | date:'yyyy-MM-dd HH:mm:ss a'}}<button ng-click="delete(timeevent._id)">
+            <i class="glyphicon glyphicon-remove"></i>
+        </button></td>
+    </tr>
+    </tbody>
+</table>
+
+</br>
+</br>
+<p>
+    <a href="/#/">Go Home</a>
+</p>
